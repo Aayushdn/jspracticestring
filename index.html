@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text Manipulation</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo"><h1>Aayushdn</h1></div>
+        <ul class="navigation">
+          <li>Home</li>
+          <li>About</li>
+          <li>Shop</li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <main>
+        <div class="row">
+          <textarea
+            id="inpText"
+            contenteditable
+            placeholder="OUTPUT HERE"
+          ></textarea>
+          <div class="options">
+            <button class="clear btn">Clear</button>
+            <button class="copy btn">Copy</button>
+          </div>
+          <select class="txtMethods">
+            <option value="uppercase">To Uppercase</option>
+            <option value="capitalize">Capitalize first letter</option>
+            <option value="lowercase">To Lowercase</option>
+            <option value="replace" class="optReplace">
+              Replace letter with something
+            </option>
+            <option value="fineTune" selected>Fine Tune Your Text</option>
+          </select>
+          <div class="customs">
+            <input
+              type="text"
+              class="customization txtMethods"
+              hidden
+              placeholder="What to be replaced?"
+            />
+            <input
+              type="text"
+              class="customization txtMethods"
+              hidden
+              placeholder="What should be there?"
+            />
+          </div>
+          <button type="submit" class="sbmtBtn btn">Submit</button>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
